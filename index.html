@@ -38,7 +38,7 @@
             padding: 25px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+            cursor: pointer;}
 
         .card:hover {
             transform: translateY(-8px);
@@ -74,21 +74,25 @@
 
 <body>
 
-    <h1>📊 Dashboards FACOM </h1>
-        
-<div class="card" onclick="location.href='dashboard1.html'" style="cursor:pointer;">
-    <h2>Trámites Digitalizados</h2>
-    <p>Número de trámites digitalizados relacionados al comercio exterior</p>
-</div>
-                
-<div class="card" onclick="location.href='dashboard2.html'" style="cursor:pointer;">
-    <h2>Medidas Ejecutadas ENFC</h2>
-    <p>Medidas Estrategia Nacional de Facilitación del Comercio (ENFC)</p>
-</div>
+<h1>📊 Dashboards FACOM </h1>
 
-    <div class="card" onclick="location.href='dashboard3.html'" style="cursor:pointer;">
-    <h2>Reuniones de Facilitación del Comercio</h2>
-    <p>Monitoreo de las reuniones</p>
+<div class="dashboard-container">
+
+    <div class="card" onclick="location.href='dashboard1.html'">
+        <h2>Trámites Digitalizados</h2>
+        <p>Número de trámites digitalizados relacionados al comercio exterior</p>
+    </div>
+
+    <div class="card" onclick="location.href='dashboard2.html'">
+        <h2>Medidas Ejecutadas ENFC</h2>
+        <p>Medidas Estrategia Nacional de Facilitación del Comercio (ENFC)</p>
+    </div>
+
+    <div class="card" onclick="location.href='dashboard3.html'">
+        <h2>Reuniones de Facilitación del Comercio</h2>
+        <p>Monitoreo de las reuniones</p>
+    </div>
+
 </div>
     
     <footer>
@@ -97,8 +101,4 @@
 
 </body>
 </html>
-
-</body>
-</html>
-
 
