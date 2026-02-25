@@ -24,15 +24,19 @@
         }
 
         .dashboard-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    width: 100%;
-    max-width: 1000px;}
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 60px; /* Aumentado el margen inferior para separar del footer */
+        }
 
-    @media (max-width: 700px) {
-    .dashboard-container {
-        grid-template-columns: 1fr;}}
+        @media (max-width: 700px) {
+            .dashboard-container {
+                grid-template-columns: 1fr;
+            }
+        }
        
         .card {
             background: white;
@@ -41,7 +45,8 @@
             padding: 25px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;}
+            cursor: pointer;
+        }
 
         .card:hover {
             transform: translateY(-8px);
@@ -68,16 +73,17 @@
         }
 
         footer {
-            margin-top: 50px;
+            margin-top: 20px;
             font-size: 0.9rem;
             opacity: 0.8;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
 
-<h1>📊 Dashboards FACOM </h1>
+<h1>📊 Dashboards FACOM</h1>
 
 <div class="dashboard-container">
 
@@ -96,29 +102,21 @@
         <p>Monitoreo de las reuniones</p>
     </div>
 
-     <div class="card" onclick="location.href='dashboard4.html'">
-        <h2>Empresas Atendidas en Facilitación del Comercio </h2>
+    <div class="card" onclick="location.href='dashboard4.html'">
+        <h2>Empresas Atendidas en Facilitación del Comercio</h2>
         <p>Monitoreo de las empresas atendidas</p>
     </div>
-    </div>
 
-     <div class="card" onclick="location.href='dashboard5.html'">
+    <div class="card" onclick="location.href='dashboard5.html'">
         <h2>Reducción de tiempos en trámites</h2>
         <p>Trámites de facilitación del comercio que redujeron tiempos de gestión</p>
     </div>
 
-</div>
+</div> <!-- Cierre del dashboard-container -->
     
-    <footer>
-        © 2026 - Gabriel Rivas
-    </footer>
+<footer>
+    © 2026 - Gabriel Rivas
+</footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
